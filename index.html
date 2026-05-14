@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gushwork - Creative Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation Header (appears on scroll) -->
+    <header id="stickyHeader" class="sticky-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <h2>Gushwork</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Gushwork</h1>
+            <p>Creative digital solutions for modern businesses</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <div class="hero-placeholder">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="300" fill="#e8f4f8"/>
+                    <circle cx="200" cy="150" r="80" fill="#4a9eff"/>
+                    <path d="M 100 200 Q 200 250 300 200" stroke="#ff6b6b" stroke-width="4" fill="none"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="28" fill="none" stroke="#4a9eff" stroke-width="2"/>
+                            <path d="M 32 16 L 40 28 L 28 28 Z" fill="#4a9eff"/>
+                            <rect x="20" y="32" width="24" height="12" fill="#4a9eff"/>
+                        </svg>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Beautiful and functional web design that captures your brand essence</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="12" y="16" width="40" height="32" fill="none" stroke="#4a9eff" stroke-width="2" rx="4"/>
+                            <path d="M 20 24 L 32 16 L 44 24" stroke="#4a9eff" stroke-width="2" fill="none"/>
+                            <circle cx="32" cy="36" r="4" fill="#4a9eff"/>
+                        </svg>
+                    </div>
+                    <h3>Development</h3>
+                    <p>Robust and scalable applications built with cutting-edge technologies</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="20" r="8" fill="none" stroke="#4a9eff" stroke-width="2"/>
+                            <path d="M 20 32 Q 32 40 44 32" stroke="#4a9eff" stroke-width="2" fill="none"/>
+                            <rect x="16" y="40" width="32" height="12" fill="#4a9eff" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3>Consulting</h3>
+                    <p>Expert guidance to transform your digital vision into reality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Image Carousel Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Our Work</h2>
+            <p class="section-subtitle">Hover over images to see details</p>
+            
+            <!-- Image Carousel -->
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel" id="carousel">
+                        <!-- Carousel Item 1 -->
+                        <div class="carousel-item">
+                            <div class="image-wrapper">
+                                <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                    <span>Project 01</span>
+                                </div>
+                                <div class="zoom-preview">
+                                    <div class="zoom-content">
+                                        <h3>E-Commerce Platform</h3>
+                                        <p>Full-stack e-commerce solution with advanced features</p>
+                                        <button class="view-btn">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Item 2 -->
+                        <div class="carousel-item">
+                            <div class="image-wrapper">
+                                <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                    <span>Project 02</span>
+                                </div>
+                                <div class="zoom-preview">
+                                    <div class="zoom-content">
+                                        <h3>Mobile Application</h3>
+                                        <p>Cross-platform mobile app with intuitive UI/UX</p>
+                                        <button class="view-btn">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Item 3 -->
+                        <div class="carousel-item">
+                            <div class="image-wrapper">
+                                <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                    <span>Project 03</span>
+                                </div>
+                                <div class="zoom-preview">
+                                    <div class="zoom-content">
+                                        <h3>SaaS Dashboard</h3>
+                                        <p>Analytics dashboard with real-time data visualization</p>
+                                        <button class="view-btn">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Item 4 -->
+                        <div class="carousel-item">
+                            <div class="image-wrapper">
+                                <div class="placeholder-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                                    <span>Project 04</span>
+                                </div>
+                                <div class="zoom-preview">
+                                    <div class="zoom-content">
+                                        <h3>Brand Identity</h3>
+                                        <p>Complete brand design system and guidelines</p>
+                                        <button class="view-btn">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Item 5 -->
+                        <div class="carousel-item">
+                            <div class="image-wrapper">
+                                <div class="placeholder-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                                    <span>Project 05</span>
+                                </div>
+                                <div class="zoom-preview">
+                                    <div class="zoom-content">
+                                        <h3>Content Management</h3>
+                                        <p>Headless CMS with powerful content management tools</p>
+                                        <button class="view-btn">View Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-btn prev" id="prevBtn" aria-label="Previous slide">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <button class="carousel-btn next" id="nextBtn" aria-label="Next slide">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 12.17 11 8.59 14.59 10 16l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators" id="indicators"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Gushwork</h2>
+                    <p>We are a team of passionate designers and developers dedicated to creating exceptional digital experiences. With over a decade of combined experience, we've helped hundreds of clients transform their ideas into reality.</p>
+                    <p>Our approach is simple: listen to our clients, understand their goals, and deliver solutions that exceed expectations.</p>
+                    <ul class="about-features">
+                        <li>✓ 500+ Projects Completed</li>
+                        <li>✓ 200+ Happy Clients</li>
+                        <li>✓ 50+ Team Members</li>
+                        <li>✓ Award-Winning Designs</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="50" y="50" width="300" height="300" fill="url(#grad1)" rx="20"/>
+                            <circle cx="200" cy="200" r="100" fill="rgba(255,255,255,0.1)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Gushwork. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Twitter">𝕏</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
